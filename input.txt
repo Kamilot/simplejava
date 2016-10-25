@@ -1,0 +1,30 @@
+public class Gcd
+{
+	public static void main(String[] args)
+	{
+        int a;
+        int b;
+
+        a = readInt();
+        b = readInt();
+        write(gcd(a, b));
+	}
+
+	static int gcd(int a, int b)
+	{
+		if (a == 0)
+		{
+            return b;
+		}
+		if (b == 0)
+		{
+            return a;
+		}
+		return gcd(b % a, a);
+	}
+
+	static boolean hello()
+	{
+        return true;
+	}
+}
